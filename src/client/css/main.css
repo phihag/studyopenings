@@ -678,17 +678,6 @@ div, img {
   width: 80% !important;
 }
 
-/** Feedback button */
-
-#doorbell-button {
-  background-color: #ddd;
-  color: black;
-}
-
-#doorbell-button:hover {
-  background-color: #eee;
-}
-
 /** Modal */
 
 .modal {

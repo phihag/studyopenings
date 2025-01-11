@@ -187,10 +187,6 @@ class Main {
       privelegedCopyDialog: PrivelegedCopyDialog,
       confirmDeleteDialog: ConfirmDeleteDialog,
       e: KeyboardEvent): void {
-    if (window.doorbellShown) {
-      // Disable key events when the feedback form is visible.
-      return;
-    }
     if (privelegedCopyDialog.isVisible()) {
       privelegedCopyDialog.onKeyDown(e);
       return;

@@ -24,7 +24,6 @@ The tool lets you:
 - Tooltips use [tippy.js](https://atomiks.github.io/tippyjs/).
 - Toasts use [toastr](https://github.com/CodeSeven/toastr).
 - Sounds from [lichess](https://github.com/ornicar/lila/tree/master/public/sound) and use [howler.js](https://howlerjs.com).
-- Feedback mechanism uses [Doorbell.io](https://doorbell.io).
 - Database uses [MongoDB](https://www.mongodb.com) and is hosted on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 - Server written in [Node.js](http://nodejs.org).
 - Client bundling uses [Webpack](https://webpack.js.org).
