@@ -1,8 +1,10 @@
 # studyopenings
 
+> **Update (Jan 11 2025):** Philipp Hagemeister is continuing hosting of studyopenings.
+
 > **UPDATE (Dec 31 2024):** After 5 years of serving studyopenings in production, I've decided to take down the site. I've financed the server costs entirely out-of-pocket and maintained the site entirely in my free time alongside a full-time job and, though I've enjoyed it until now, I no longer wish to pursue this. I wish studyopenings users the best of luck in their chess improvement journey.
 
-![StudyOpenings - Build mode](https://raw.githubusercontent.com/jven/studyopenings/master/doc/build.png)
+![StudyOpenings - Build mode](https://raw.githubusercontent.com/phihag/studyopenings/master/doc/build.png)
 
 ## What is this?
 A tool to help chess players memorize opening repertoires.
