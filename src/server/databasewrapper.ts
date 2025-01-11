@@ -278,6 +278,7 @@ export class DatabaseWrapper {
   }
 
   private onDatabaseConnect_(err: Error, mongoClient: MongoClient) {
+    console.log('Connected to mongo database.');
     if (err) {
       console.error('Error connecting to database: ' + err);
       return;
