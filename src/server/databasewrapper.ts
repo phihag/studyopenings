@@ -23,9 +23,10 @@ export class DatabaseWrapper {
     }
     console.log('Using database path: ' + databasePath);
     MongoClient.connect(
-        databasePath,
-        {useNewUrlParser: true},
-        this.onDatabaseConnect_.bind(this));
+        databasePath, {
+          useNewUrlParser: true,
+        },
+        this.onDatabaseConnect_.bind(this, databasePath));
   }
 
   deleteRepertoire(repertoireId: string, owner: string): Promise<void> {
@@ -277,12 +278,21 @@ export class DatabaseWrapper {
         });
   }
 
-  private onDatabaseConnect_(err: Error, mongoClient: MongoClient) {
-    console.log('Connected to mongo database.');
+  private onDatabaseConnect_(databasePath: string,
+                             err: Error, mongoClient: MongoClient) {
     if (err) {
       console.error('Error connecting to database: ' + err);
+      const this_ = this;
+      const RETRY_IN = 1000;
+      console.log(`Will retry in ${RETRY_IN} ms …`);
+      setTimeout(() => {
+        if (!this_.mongoClient_) {
+          this_.connect(databasePath);
+        }
+      }, RETRY_IN);
       return;
     }
+    console.log('Connected to mongo database.');
     this.mongoClient_ = mongoClient;
   }
 }
