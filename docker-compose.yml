@@ -5,6 +5,7 @@ services:
     restart: always
     volumes:
       - ./data-db/:/data/db/
+    attach: false
 
   web:
     build: .
