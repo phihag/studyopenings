@@ -70,5 +70,6 @@ studyopenings/ $ npm install
 studyopenings/ $ jest --watch
 ```
 
-## Author
-Justin Venezuela • jven@jvenezue.la • http://jvenezue.la
+## Authors
+Original author (inactive): Justin Venezuela • jven@jvenezue.la • http://jvenezue.la
+Current maintainer: Philipp Hagemeister • phihag@phihag.de • https://phihag.de/
