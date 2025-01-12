@@ -75,7 +75,7 @@ studyopenings/ $ jest --watch
 ```shell
 git clone https://github.com/phihag/studyopenings.git
 cd studyopenings/
-docker compose up
+docker compose up -d
 ```
 
 ## Authors
